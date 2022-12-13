@@ -78,4 +78,48 @@ a:nth-of-type(12) {
   }
 }
 
-/* Jouw animaties */
+
+/*-----1----- Frontend Animatie */
+
+a:nth-of-type(1) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.colorAni {
+  animation-name: colorAni;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes colorAni {
+    0%   {background-color: var(--highlight-secondary);}
+    25%  {background-color: white;}
+    50%  {background-color: salmon;}
+    75%  {background-color: bisque;}
+    100% {background-color: var(--highlight-primary);}
+  }
+
+  /*-----2----- Design Animatie */
+
+a:nth-of-type(2) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+  10% {transform: rotate(180deg);
+}
+  }
