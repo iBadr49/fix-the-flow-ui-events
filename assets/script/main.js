@@ -34,3 +34,13 @@ design.addEventListener('animationend', designRotate)
 function designRotate() {
   design.classList.toggle('rotate')
 }
+
+/*----3---- & Animatie*/
+let flipy = document.querySelector('a:nth-of-type(3)')
+
+flipy.addEventListener('click', flipytikky)
+flipy.addEventListener('animationend', flipytikky)
+
+function flipytikky() {
+  flipy.classList.toggle('flipy')
+}
