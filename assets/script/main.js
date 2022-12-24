@@ -38,9 +38,40 @@ function designRotate() {
 /*----3---- & Animatie*/
 let flipy = document.querySelector('a:nth-of-type(3)')
 
-flipy.addEventListener('click', flipytikky)
-flipy.addEventListener('animationend', flipytikky)
+flipy.addEventListener('click', flipymove)
+flipy.addEventListener('animationend', flipymove)
 
-function flipytikky() {
+function flipymove() {
   flipy.classList.toggle('flipy')
 }
+
+/*----4---- Development Animatie*/
+let helicopter = document.querySelector('a:nth-of-type(4)')
+
+helicopter.addEventListener('click', helimove)
+helicopter.addEventListener('animationend', helimove)
+
+function helimove() {
+  helicopter.classList.toggle('helicopter')
+}
+
+/*----5---- Sprint V Animatie*/
+let upanddown = document.querySelector('a:nth-of-type(5)')
+
+upanddown.addEventListener('click', updownmove)
+upanddown.addEventListener('animationend', updownmove)
+
+function updownmove() {
+  upanddown.classList.toggle('upanddown')
+}
+
+/*----6---- Fix Animatie*/
+let driehoekje  = document.querySelector('a:nth-of-type(6)')
+
+driehoekje.addEventListener('click', driehoekmove)
+driehoekje.addEventListener('animationend', driehoekmove)
+
+function driehoekmove() {
+  driehoekje.classList.toggle('driehoekje')
+}
+

@@ -83,7 +83,7 @@ a:nth-of-type(12) {
 
 a:nth-of-type(1) {
   position: relative;
-  background: var(--highlight-secondary);
+  background: burlywood;
   color: var(--secondary);
   border-color: var(--secondary);
 }
@@ -98,7 +98,7 @@ a:nth-of-type(1) {
 @keyframes colorAni {
     0%   {background-color: var(--highlight-secondary);}
     25%  {background-color: white;}
-    50%  {background-color: salmon;}
+    50%  {background-color: rgb(127, 170, 255);}
     75%  {background-color: bisque;}
     100% {background-color: var(--highlight-primary);}
   }
@@ -129,8 +129,9 @@ a:nth-of-type(2) {
 a:nth-of-type(3) {
   position: relative;
   background: white;
-  color: var(--highlight-secondary);
-  border-color: var(--secondary);
+  color: red;
+  border-color: red;
+  border-width: 3px;
 }
 
 .flipy {
@@ -142,4 +143,103 @@ a:nth-of-type(3) {
 
 @keyframes flipy {
   50% {transform: rotate(100000deg);}
+}
+
+/*----4---- Development Animatie*/
+
+a:nth-of-type(4) {
+  position: relative;
+  background: rgb(45, 197, 205);
+  color: var(--secondary);
+  border-color: var(--highlight-secondary);
+  border-width: 3.5px;
+}
+
+.helicopter {
+  animation-name: helicopter;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes helicopter {
+  0% {
+    transform: scale(1, 1) translateX(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateX(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateX(-5rem) rotate(-9000deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+/*----5---- Sprint V Animatie */
+
+a:nth-of-type(5) {
+  position: relative;
+  background-color: var(--secondary);
+  color: hsl(0, 100%, 99%);
+  border-width: 3px;
+}
+
+.upanddown {
+  animation-name: upanddown;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes upanddown {
+  0% {
+    transform: scale(1, 1) translateX(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateX(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(100rem) rotate(0deg);
+  }
+  80% {
+    transform: scale(0.9, 1.1) translateY(-100rem) rotate(0deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(-1);
+  }
+}
+
+/*----6---- Fix Animatie */
+
+a:nth-of-type(6) {
+  position: relative;
+  background-color: var(--secondary);
+  color: #ab8df0;
+  border-color: rgb(255, 255, 255);
+  border-width: 5px;
+}
+
+.driehoekje {
+  animation-name: driehoekje;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes driehoekje {
+  0% {
+    transform: scale(1, 1) translateX(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(20rem) rotate(0deg);
+  }
+  80% {
+    transform: scale(0.9, 1.1) translateX(50rem) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }
