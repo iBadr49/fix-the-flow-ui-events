@@ -236,7 +236,7 @@ a:nth-of-type(6) {
     transform: scale(0.9, 1.1) translateY(20rem) rotate(0deg);
   }
   80% {
-    transform: scale(0.9, 1.1) translateX(50rem) rotate(0deg);
+    transform: scale(0.9, 1.1) translateX(38rem) rotate(0deg);
   }
 
   100% {
