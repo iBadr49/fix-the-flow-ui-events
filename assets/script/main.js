@@ -75,3 +75,13 @@ function driehoekmove() {
   driehoekje.classList.toggle('driehoekje')
 }
 
+/*----8---- flow Animatie*/
+let ruit  = document.querySelector('a:nth-of-type(8)')
+
+ruit.addEventListener('click', ruitmove)
+ruit.addEventListener('animationend', ruitmove)
+
+function ruitmove() {
+  ruit.classList.toggle('ruit')
+}
+

@@ -243,3 +243,44 @@ a:nth-of-type(6) {
     transform: scale(1, 1) translateY(0);
   }
 }
+
+/*----8---- flow (Button) Animatie */
+
+a:nth-of-type(8) {
+  position: relative;
+  background-color: sienna;
+  color: whitesmoke;
+  border-width: 3px;
+}
+
+.ruit {
+  animation-name: ruit;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration:3.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes ruit {
+  0% {
+    transform: scale(1, 1) translateX(0);
+  }
+  20% {
+    transform: scale(0.9, 1) translateY(-10rem);
+  }
+  35% {
+    transform: scale(0.9, 1.1) translateX(10rem);
+  }
+  50% {
+    transform: scale(0.9, 1.1) translateX(0rem) translateY(10rem);
+  }
+  70% {
+    transform: scale(0.9, 1) translateX(-10rem);
+  }
+  80% {
+    transform: scale(1, 1) translateY(-10rem);
+  }
+  100% {
+    transform: scale(1, 1) translateX(0);
+  }
+  
+}
