@@ -85,3 +85,25 @@ function ruitmove() {
   ruit.classList.toggle('ruit')
 }
 
+/*----10---- interface Animatie*/
+let hide  = document.querySelector('a:nth-of-type(10)')
+
+hide.addEventListener('click', gohide)
+hide.addEventListener('animationend', gohide)
+
+function gohide() {
+  hide.classList.toggle('hide')
+}
+
+/*----15----  Feedback Animatie*/
+let move  = document.querySelector('a:nth-of-type(15)')
+
+move.addEventListener('click', moveAround)
+move.addEventListener('animationend', moveAround)
+
+function moveAround() {
+  move.classList.toggle('move')
+}
+
+
+
