@@ -36,13 +36,13 @@ function designRotate() {
 }
 
 /*----3---- & Animatie*/
-let flipy = document.querySelector('a:nth-of-type(3)')
+let spin = document.querySelector('a:nth-of-type(3)')
 
-flipy.addEventListener('click', flipymove)
-flipy.addEventListener('animationend', flipymove)
+spin.addEventListener('click', infiniteSpin)
+spin.addEventListener('animationend', infiniteSpin)
 
-function flipymove() {
-  flipy.classList.toggle('flipy')
+function infiniteSpin() {
+  spin.classList.toggle('spin')
 }
 
 /*----4---- Development Animatie*/
